@@ -3,11 +3,12 @@
     --primaryH: 210;
     --primaryS: 50%;
     --primaryL: 40%;
-    --primary-bg: #fff;
+    --primary-bg: rgb(22, 20, 20);
     --secondaryH: 0;
     --secondaryS: 0%;
     --secondaryL: 13%;
     --secondary-bg: #fff;
+
     /* Font */
     --font-family: Helvetica, Arial, sans-serif;
     --font-size-root: 16px;
@@ -997,4 +998,11 @@
     /* TODO remove important override */
     text-decoration-line: none !important;
   }
-  
+  img {
+    position: relative;
+    top: 10%; left:33%;
+    width: 135px;
+    height: 135px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }

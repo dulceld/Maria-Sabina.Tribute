@@ -998,11 +998,17 @@
     /* TODO remove important override */
     text-decoration-line: none !important;
   }
-  img {
-    position: relative;
-    top: 10%; left:33%;
-    width: 135px;
-    height: 135px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+
+.img {
+  position: relative;
+  top: 10%; 
+  left:33%;
+  width: 135px;
+  height: 135px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+
   }
+  
+  

@@ -9,6 +9,8 @@
     --secondaryL: 13%;
     --secondary-bg: #fff;
 
+  
+
     /* Font */
     --font-family: Helvetica, Arial, sans-serif;
     --font-size-root: 16px;
@@ -86,8 +88,10 @@
     font-size: 1rem;
     margin: auto auto;
     padding: 1rem;
+    text-align: center;
+    
   }
-  
+
   @media all and (min-width: 1024px) {
     body {
       max-width: 920px;
@@ -119,6 +123,7 @@
     color: var(--primary);
     font-weight: var(--font-weight-normal);
     margin: var(--heading-margin);
+
   }
   
   h1 {
@@ -999,16 +1004,12 @@
     text-decoration-line: none !important;
   }
 
-.img {
-  position: relative;
-  top: 10%; 
-  left:33%;
-  width: 135px;
-  height: 135px;
-  padding-top: 3%;
-  padding-bottom: 3%;
-
-
+  
+  img {
+    position: relative;
+    top: 50%; left:25%;
+    width: 600px;
+    height: 455px;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
-  
-  

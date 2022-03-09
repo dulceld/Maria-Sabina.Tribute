@@ -14,14 +14,14 @@
     /* Font */
     --font-family: Helvetica, Arial, sans-serif;
     --font-size-root: 16px;
-    --font-weight-bolder: 700;
+    --font-weight-bolder: 500;
     --font-weight-bold: 400;
     --font-weight-normal: 200;
     --font-weight-thin: 100;
     --line-height: 1.75rem;
     --heading-margin: 1.5rem 0 1rem;
     /* Inputs */
-    --border-radius: 2px;
+    --border-radius: .5px;
     /* Status */
     --error: #d00;
     --warning: #ec0;
@@ -85,17 +85,14 @@
   }
   
   body {
-    font-size: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fafafa;
     margin: auto auto;
     padding: 1rem;
     text-align: center;
+    
   }
-div p{
-text-align: center;
-
-}
   @media all and (min-width: 1024px) {
     body {
       max-width: 920px;
@@ -126,10 +123,9 @@ text-align: center;
   h6 {
     color: var(--primary);
     color: rgb(233, 231, 224);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: var(--font-weight-light);
     margin: var(--heading-margin);
-
   }
   
   h1 {
@@ -173,6 +169,8 @@ text-align: center;
   
   li {
     font-size: 1rem;
+    font-family: monospace;
+  
     line-height: var(--line-height);
     max-width: 80ch;
     max-width: calc(80ch - 3rem)
@@ -523,7 +521,7 @@ text-align: center;
     content: open-quote;
     color: hsla(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.15);
     font-size: 5rem;
-    font-family: "Times New Roman", "Times", serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     left: 0.25rem;
     line-height: 1;
     position: absolute;
@@ -763,7 +761,7 @@ text-align: center;
     font-size: 1rem;
     line-height: var(--line-height);
     margin: 1rem 0;
-    max-width: 80ch;
+   text-align: center;
   }
   
   pre {
@@ -997,7 +995,9 @@ text-align: center;
     border-radius: 1em;
 
   }
-  
+  p{
+    text-align: center;
+  }
   nav ul {
     justify-content: space-evenly;
     display: flex;
@@ -1015,7 +1015,7 @@ text-align: center;
  
   img {
     position: relative;
-    top: 50%; left:25%;
+    right: 10px; left:10px;
     width: 600px;
     height: 455px;
     padding-top: 3%;

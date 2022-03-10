@@ -3,11 +3,11 @@
     --primaryH: 210;
     --primaryS: 50%;
     --primaryL: 40%;
-    --primary-bg: rgb(22, 20, 20);
+    --primary-bg: rgb(0, 0, 0);
     --secondaryH: 0;
     --secondaryS: 0%;
     --secondaryL: 13%;
-    --secondary-bg: #fff;
+    --secondary-bg: rgb(0, 0, 0);
 
   
 
@@ -29,48 +29,7 @@
     --correct: #080;
   }
   
-  :root {
-    /* Calculated colors */
-    --primary: hsl(var(--primaryH), var(--primaryS), var(--primaryL));
-    --primary-bright: hsl(var(--primaryH), calc(var(--primaryS) * 1.25), 90%);
-    --primary-transparent: hsla(
-      var(--primaryH),
-      var(--primaryS),
-      var(--primaryL),
-      0.05
-    );
-    --primary-dark: hsl(
-      var(--primaryH),
-      var(--primaryS),
-      calc(var(--primaryL) * 0.5)
-    );
-    --primary-darker: hsl(
-      var(--primaryH),
-      var(--primaryS),
-      calc(var(--primaryL) * 0.2)
-    );
-    --primary-light: hsl(var(--primaryH), var(--primaryS), 75%);
-    --primary-lighter: hsl(var(--primaryH), var(--primaryS), 96%);
-    --secondary: hsl(var(--secondaryH), var(--secondaryS), var(--secondaryL));
-    --secondary-transparent: hsl(
-      var(--secondaryH),
-      var(--secondaryS),
-      var(--secondaryL),
-      0.05
-    );
-    --secondary-dark: hsl(
-      var(--secondaryH),
-      var(--secondaryS),
-      calc(var(--secondaryL) * 0.5)
-    );
-    --secondary-darker: hsl(
-      var(--secondaryH),
-      var(--secondaryS),
-      calc(var(--secondaryL) * 0.2)
-    );
-    --secondary-light: hsl(var(--secondaryH), var(--secondaryS), 75%);
-    --secondary-lighter: hsl(var(--secondaryH), var(--secondaryS), 96%);
-  }
+  
   
   html {
     -ms-text-size-adjust: 100%;
@@ -85,13 +44,14 @@
   }
   
   body {
-    font-size: .5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fafafa;
     margin: auto auto;
-    padding: 1rem;
-    text-align: center;
-    
+  }
+  .boxed {
+    border: 1px solid rgb(14, 67, 128) ;
+    height: 250px;
+    border-top: 1%;
   }
   @media all and (min-width: 1024px) {
     body {
@@ -115,7 +75,7 @@
     display: none;
   }
   
-  h1,
+
   h2,
   h3,
   h4,
@@ -126,11 +86,18 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: var(--font-weight-light);
     margin: var(--heading-margin);
-  }
+}
   
   h1 {
     font-size: 2.5rem;
-  }
+    color: var(--primary);
+    color: rgb(233, 231, 224);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: var(--font-weight-light);
+    margin: var(--heading-margin);
+    padding-top: 2%;
+}
+  
   
   h2 {
     font-size: 2rem;
@@ -170,7 +137,6 @@
   li {
     font-size: 1rem;
     font-family: monospace;
-  
     line-height: var(--line-height);
     max-width: 80ch;
     max-width: calc(80ch - 3rem)
@@ -498,8 +464,10 @@
     display: none;
     height: 0;
   }
-  body {background-color: #6689c2;
-  text-align: center;}
+  body {background-color: #000000;
+  text-align: center;
+  padding-top: 2%;
+}
   b,
   strong {
     font-weight: var(--font-weight-bolder);
@@ -758,14 +726,16 @@
   }
   
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: var(--line-height);
     margin: 1rem 0;
    text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   padding-bottom: 5%;
   }
   
   pre {
-    font-family: monospace, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1em;
     margin: 1rem 0;
     max-width: 100%;
@@ -991,13 +961,12 @@
   /* our custom modifications and overrides */
   
   nav {
-    background-color: rgb(233, 237, 241);
+    background-color: rgb(7, 28, 49);
     border-radius: 1em;
 
   }
-  p{
-    text-align: center;
-  }
+
+  
   nav ul {
     justify-content: space-evenly;
     display: flex;
@@ -1006,19 +975,16 @@
   nav li {
     display: inline-block;  
     font-size: x-large;
-
+    padding-bottom: 1%;
+    padding-top: 1%;
   }
   nav li a {
     /* TODO remove important override */
     text-decoration-line: none !important;
   }
  
-  img {
+  #wrapperHeader{
     position: relative;
-    right: 10px; left:10px;
-    width: 600px;
-    height: 455px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
-  
+    background-image:url("images/mariasabina.jpeg");
+   
+}

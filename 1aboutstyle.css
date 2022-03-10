@@ -986,5 +986,10 @@
   #wrapperHeader{
     position: relative;
     background-image:url("images/mariasabina.jpeg");
-   
+    position: relative;
+  top: 5%; left:5;
+  width: 600px;
+  height: 455px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }

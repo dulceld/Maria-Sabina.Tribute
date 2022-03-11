@@ -32,11 +32,9 @@
   
   
   html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    
     background-color: var(--secondary-bg);
-    color: var(--secondary);
-    font-family: var(--font-family);
+    
     font-size: var(--font-size-root);
     font-weight: var(--font-weight-normal);
     margin: 0;
@@ -66,10 +64,7 @@
     }
   }
   
-  :focus {
-    outline: 1px dashed var(--primary);
-    outline-offset: 2px;
-  }
+ 
   
   [hidden],
   template {
@@ -82,20 +77,14 @@
   h4,
   h5,
   h6 {
-    color: var(--primary);
     color: rgb(233, 231, 224);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: var(--font-weight-light);
-    margin: var(--heading-margin);
 }
   
   h1 {
     font-size: 2.5rem;
-    color: var(--primary);
     color: rgb(233, 231, 224);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: var(--font-weight-light);
-    margin: var(--heading-margin);
     padding-top: 2%;
 }
   
@@ -145,28 +134,16 @@
   }
   
   table {
-    background-color: var(--secondary-bg);
     border: 0;
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
   }
   
-  thead {
-    box-shadow: inset 0 -2px var(--secondary);
-  }
   
-  tfoot {
-    box-shadow: inset 0 2px var(--secondary);
-  }
   
-  tbody tr:nth-child(even) {
-    background-color: var(--secondary-lighter);
-  }
   
-  tbody tr:hover {
-    background-color: var(--primary-lighter);
-  }
+  
   
   td,
   th {
@@ -174,17 +151,14 @@
     vertical-align: top;
   }
   
-  th {
-    font-weight: var(--font-weight-bolder);
-  }
+  
   
   input:not([type="file"]),
   optgroup,
   option,
   textarea,
   select {
-    border: 1px solid var(--secondary-light);
-    border-radius: var(--border-radius);
+    
     box-sizing: border-box;
     color: inherit;
     font: inherit;
@@ -198,13 +172,8 @@
     text-transform: none;
     vertical-align: bottom;
   }
-  input:not([type="file"]):invalid,
-  optgroup:invalid,
-  option:invalid,
-  textarea:invalid,
-  select:invalid {
-    border-color: var(--error);
-  }
+  
+  
   input:not([type="file"]):invalid:hover,
   optgroup:invalid:hover,
   option:invalid:hover,
@@ -212,33 +181,12 @@
   select:invalid:hover {
     border: 1px solid #aa0000;
   }
-  input:not([type="file"])[disabled],
-  input:not([type="file"]):disabled,
-  optgroup[disabled],
-  optgroup:disabled,
-  option[disabled],
-  option:disabled,
-  textarea[disabled],
-  textarea:disabled,
-  select[disabled],
-  select:disabled {
-    background: var(--secondary-lighter);
-    color: var(--secondary-light);
-  }
-  input:not([type="file"])::-webkit-calendar-picker-indicator,
-  optgroup::-webkit-calendar-picker-indicator,
-  option::-webkit-calendar-picker-indicator,
-  textarea::-webkit-calendar-picker-indicator,
-  select::-webkit-calendar-picker-indicator {
-    display: none;
-    background: none;
-  }
   
-  input:not([type="file"]):not([type="image"]):not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
-  textarea:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover,
-  select:not(:invalid):not(:disabled):not([disabled]):not([readonly]):hover {
-    border: 1px solid var(--secondary);
-  }
+   
+  
+ 
+  
+  
   
   input[type="color"] {
     padding: 0.125rem;
@@ -254,21 +202,10 @@
     overflow: auto;
   }
   
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-  }
   
-  input[type="search"] {
-    -webkit-appearance: textfield;
-    appearance: textfield;
-  }
   
-  input[type="search"]::-webkit-search-cancel-button,
-  input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-    appearance: none;
-  }
+  
+  
   
   input[type="radio"],
   input[type="checkbox"],
@@ -282,103 +219,30 @@
     padding: 0;
   }
   
-  button,
-  input[type="button"],
-  input[type="reset"],
-  input[type="submit"] {
-    -webkit-appearance: button;
-    appearance: button;
-    background-color: var(--primary);
-    border: 1px solid transparent;
-    border-radius: var(--border-radius);
-    box-sizing: border-box;
-    color: var(--primary-bg);
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.8rem;
-    font-weight: var(--font-weight-bold);
-    margin: 0;
-    max-width: auto;
-    min-height: 2.5rem;
-    min-width: auto;
-    overflow: visible;
-    padding: 0 1rem;
-    text-transform: uppercase;
-  }
-  button[disabled],
-  button:disabled,
-  input[type="button"][disabled],
-  input[type="button"]:disabled,
-  input[type="reset"][disabled],
-  input[type="reset"]:disabled,
-  input[type="submit"][disabled],
-  input[type="submit"]:disabled {
-    background: var(--secondary-lighter);
-    color: var(--secondary-light);
-  }
-  button:not(:disabled):not([disabled]):hover,
-  input[type="button"]:not(:disabled):not([disabled]):hover,
-  input[type="reset"]:not(:disabled):not([disabled]):hover,
-  input[type="submit"]:not(:disabled):not([disabled]):hover {
-    background-color: var(--primary-dark);
-    border: 1px solid transparent;
-  }
   
-  input[type="reset"] {
-    background-color: var(--primary-bg);
-    border: 1px solid var(--primary);
-    color: var(--primary);
-  }
-  input[type="reset"]:not(:disabled):not([disabled]):hover {
-    background-color: var(--primary-lighter);
-  }
-  input[type="reset"]:disabled,
-  input[type="reset"][disabled] {
-    background: var(--secondary-lighter);
-    border: 1px solid transparent;
-    color: var(--secondary-light);
-  }
+  
+  
+  
   
   button[disabled],
   html input[disabled] {
     cursor: default;
   }
   
-  button::-moz-focus-inner,
-  input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
+  
   
   input[type="radio"],
   input[type="checkbox"] {
-    -moz-appearance: none;
-    -webkit-appearance: none;
+  
     appearance: none;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    border: 1px solid var(--secondary-light);
-    box-shadow: inset 0 0 0 0.185rem var(--secondary-bg);
-    background: var(--secondary-bg);
     vertical-align: text-top;
   }
-  input[type="radio"][type="checkbox"],
-  input[type="checkbox"][type="checkbox"] {
-    border-radius: var(--border-radius);
-  }
-  input[type="radio"]:checked,
-  input[type="checkbox"]:checked {
-    background: var(--primary);
-  }
-  input[type="radio"]:disabled,
-  input[type="checkbox"]:disabled {
-    box-shadow: inset 0 0 0 0.185rem var(--secondary-lighter);
-    background: var(--secondary-lighter);
-  }
+ 
   
   select:not([multiple]) {
-    -webkit-appearance: none;
     appearance: none;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M0,10 20,30 40,10' fill='none' stroke='%23999' stroke-width='2'/></svg>");
     background-size: 1em 1em;
@@ -395,19 +259,9 @@
     min-height: 10rem;
     padding: 0;
   }
-  select[multiple] option:checked {
-    background: var(--secondary-light)
-      linear-gradient(
-        0deg,
-        var(--secondary-light) 0%,
-        var(--secondary-light) 100%
-      );
-  }
-  select[multiple]:focus option:checked {
-    background: var(--primary)
-      linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%);
-    color: var(--primary-bg);
-  }
+  
+  
+  
   
   optgroup {
     border: 0;
@@ -426,7 +280,6 @@
   }
   option:hover {
     border: 0;
-    background: var(--primary-lighter);
   }
   
   a,
@@ -434,21 +287,17 @@
   a:visited,
   a:active,
   a:focus {
-    color: var(--primary);
-    font-weight: var(--font-weight-bold);
     text-decoration: underline;
   }
   
   a:hover {
     text-decoration: none;
-    color: var(--primary-dark);
   }
   
   abbr[title] {
     border-bottom: 0;
     text-decoration: underline;
     text-decoration-style: dashed;
-    text-decoration-color: var(--primary);
   }
   
   address {
@@ -470,13 +319,9 @@
   text-align: center;
   padding-top: 2%;
 }
-  b,
-  strong {
-    font-weight: var(--font-weight-bolder);
-  }
+ 
   
   blockquote {
-    background-color: var(--secondary-transparent);
     box-sizing: border-box;
     display: block;
     margin: 1rem 0 1rem 3rem;
@@ -489,7 +334,6 @@
   }
   blockquote::before {
     content: open-quote;
-    color: hsla(var(--secondaryH), var(--secondaryS), var(--secondaryL), 0.15);
     font-size: 5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     left: 0.25rem;
@@ -513,27 +357,21 @@
   }
   cite {
     font-style: italic;
-    font-weight: var(--font-weight-thin);
   }
   
   code {
-    background: var(--secondary-lighter);
-    color: var(--secondary);
     display: inline-block;
     font-family: monospace, monospace;
     font-size: 1em;
-    font-weight: var(--font-weight-bold);
     padding: 0 0.25rem;
   }
   
   del {
     text-decoration: line-through;
-    text-decoration-color: var(--primary);
   }
   
   dialog {
-    border: 1px solid var(--secondary-light);
-    border-radius: var(--border-radius);
+    border: 1px;
     display: none;
     left: 50%;
     margin: 0;
@@ -552,7 +390,6 @@
   }
   dialog::before {
     content: "";
-    background: var(--secondary);
     height: 100vmax;
     left: 50%;
     opacity: 0.33;
@@ -564,8 +401,6 @@
   }
   dialog::after {
     content: "";
-    background: var(--primary-bg);
-    border-radius: var(--border-radius);
     height: 100%;
     left: 0;
     position: absolute;
@@ -583,16 +418,14 @@
   dialog > h4,
   dialog > h5,
   dialog > h6 {
-    border-bottom: 1px solid var(--secondary-light);
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-    color: var(--secondary);
+    border-bottom: 1px;
     font-size: 1.125rem;
     margin: -1rem -1rem 1rem -1rem;
     padding: 0.5rem 1rem;
   }
   
   details {
-    border: 1px solid var(--secondary-light);
+    border: 1px;
     display: block;
     padding: 0 1rem;
   }
@@ -601,133 +434,31 @@
     padding: 1rem;
   }
   details[open] summary {
-    border-bottom: 1px solid var(--secondary-light);
+    border-bottom: 1px;
   }
   details + details {
     border-top: 0;
     border-radius: 0;
   }
-  details:first-of-type {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-  }
-  details:last-of-type {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-  
-  dfn {
-    font-style: italic;
-    font-weight: var(--font-weight-bold);
-  }
-  
   dl {
     margin: 1rem 0;
     font-size: 1rem;
     line-height: 1.5rem;
     max-width: 80ch;
   }
-  
-  dt {
-    font-weight: var(--font-weight-bold);
-    margin-top: 1rem;
-  }
-  
-  dd {
-    margin-left: 1rem;
-    font-style: italic;
-  }
-  
-  fieldset {
-    border: 1px solid var(--secondary-light);
-    border-radius: var(--border-radius);
-    margin: 1rem 0;
-    padding: 0 1rem 1rem 1rem;
-  }
-  fieldset > :last-child {
-    margin-bottom: 0;
-  }
-  
-  legend {
-    background: var(--secondary-lighter);
-    border: 1px solid var(--secondary-light);
-    border-radius: var(--border-radius);
-    padding: 0.25rem 0.5rem;
-  }
-  
-  figure {
-    background: var(--secondary-lighter);
-    border: 1px solid var(--secondary-light);
-    border-radius: var(--border-radius);
-    display: block;
-    margin: 1rem 0;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  figcaption {
-    font-size: 0.875rem;
-    font-style: italic;
-  }
-  
-  hgroup {
-    border-left: 5px solid var(--primary);
-    display: block;
-    margin: var(--heading-margin);
-    padding-left: 1rem;
-  }
-  hgroup h1,
-  hgroup h2,
-  hgroup h3,
-  hgroup h4,
-  hgroup h5,
-  hgroup h6 {
-    margin: 0;
-  }
-  
-  hr {
-    border: 0;
-    border-top: 1px solid var(--secondary-light);
-    box-sizing: content-box;
-    height: 0;
-    margin: 2rem auto;
-    max-width: 15rem;
-    width: 50%;
-  }
-  
-  
-  
   ins {
     text-decoration: underline;
-    text-decoration-color: var(--primary);
   }
-  
   kbd {
-    background-color: var(--secondary-lighter);
-    border: 1px solid var(--secondary-light);
-    border-radius: var(--border-radius);
-    color: var(--secondary);
+    border: 1px;
     font-family: monospace, monospace;
     font-size: 0.9rem;
     padding: 0.125rem 0.25rem;
   }
-  
-  mark {
-    background-color: var(--primary-bright);
-    border-left: 4px solid var(--primary-bright);
-    border-right: 4px solid var(--primary-bright);
-    color: var(--secondary-darker);
-  }
-  
-  output {
-    font-weight: var(--font-weight-bold);
-    unicode-bidi: isolate;
-  }
-  
   p {
     font-size: 1.1rem;
-    line-height: var(--line-height);
     margin: 1rem 0;
+    line-height: 32px;
    text-align: center;
    font-family: 'Courier New', Courier, monospace;
   }
@@ -771,13 +502,11 @@
   s,
   strike {
     text-decoration: line-through;
-    text-decoration-color: var(--primary);
   }
   
   samp {
     font-family: monospace, monospace;
     font-size: 1em;
-    font-weight: var(--font-weight-bold);
   }
   
   small {
@@ -809,14 +538,12 @@
   u {
     text-decoration: underline;
     text-decoration-style: wavy;
-    text-decoration-color: var(--error);
   }
   
   var {
     font-family: monospace, monospace;
     font-size: 1em;
     font-style: normal;
-    font-weight: var(--font-weight-bold);
   }
   
   video {
@@ -833,8 +560,6 @@
     --thick: 50%;
     --medium: 58%;
     --thin: 67%;
-    --thickness: var(--medium);
-    aspect-ratio: 1;
     border-radius: 50%;
     display: grid;
     font-size: 2em;
@@ -845,25 +570,14 @@
   }
   [role="progressbar"]::before {
     content: "";
-    background: conic-gradient(var(--primary) calc(var(--value) * 1%), #0000 0);
-    background-color: var(--primary-lighter);
+    
     height: 100%;
     left: 0;
-    -webkit-mask: radial-gradient(#0000 var(--thickness), #000 0);
-    mask: radial-gradient(#0000 var(--thickness), #000 0);
+    
     position: absolute;
-    top: 0;
     transition: background-color 0.5s;
     width: 100%;
-  }
-  [role="progressbar"]::after {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) "%";
-  }
-  [role="progressbar"]:hover::before {
-    background-color: var(--primary-light);
-  }
-  
+  } 
   /* our custom modifications and overrides */
   
   nav {
@@ -893,7 +607,8 @@
     position: relative;
     background-image:url("images/mariasabina.jpeg");
     position: relative;
-  top: 5%; left:5;
+  top: 5%; 
+  left:5%;
   width: 600px;
   height: 455px;
   padding-top: 3%;

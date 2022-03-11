@@ -1,16 +1,7 @@
 :root {
     /* Colors */
-    --primaryH: 210;
-    --primaryS: 50%;
-    --primaryL: 40%;
     --primary-bg: rgb(0, 0, 0);
-    --secondaryH: 0;
-    --secondaryS: 0%;
-    --secondaryL: 13%;
     --secondary-bg: rgb(0, 0, 0);
-
-  
-
     /* Font */
     --font-family: Helvetica, Arial, sans-serif;
     --font-size-root: 16px;
@@ -22,15 +13,8 @@
     --heading-margin: 1.5rem 0 1rem;
     /* Inputs */
     --border-radius: .5px;
-    /* Status */
-    --error: #d00;
-    --warning: #ec0;
-    --info: #369;
-    --correct: #080;
+    
   }
-  
-  
-  
   html {
     
     background-color: var(--secondary-bg);
@@ -48,11 +32,11 @@
   .boxed {
     border: 1px solid rgb(14, 67, 128) ;
     height: 350px;
-    padding-bottom: 2%;
     margin-bottom: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
+  
   @media all and (min-width: 1024px) {
     body {
       max-width: 920px;
@@ -465,6 +449,8 @@
     line-height: 32px;
    text-align: center;
    font-family: 'Courier New', Courier, monospace;
+   margin-left: 5%;
+   margin-right: 5%;
   }
   
   pre {
